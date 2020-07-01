@@ -66,7 +66,7 @@ bw     = 0.7;
 
 vartheta_yw   =0.5;
 vartheta_piw  =0.5;
-vartheta_xi =0.5;
+vartheta_xi   =0.5;
 
 model(linear);  
 
