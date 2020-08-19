@@ -1,6 +1,6 @@
 function F = M_ss( Mss )
 
-global sigma nu betta b alppha deltta S pi tau k_n 
+global sigma nu betta b alppha deltta S pi tau 
 
 c       =Mss(1);
 c_H     =Mss(2);
@@ -13,8 +13,7 @@ y       =Mss(8);
 k       =Mss(9);
 z       =Mss(10);
 f       =Mss(11);
-n       =Mss(12);
-invs    =Mss(13);
+invs    =Mss(12);
 
 F=[
     -h^tau+w*(c*(1-b))^(-sigma);...
@@ -28,5 +27,4 @@ F=[
     -f+z+(1-deltta);
 	-f+S*r/pi;...
 	-invs+deltta*k;...
-	-y+c_H+c_Hs+invs;...
-	-k/n+k_n];
+	-y+c_H+c_Hs+invs;];
